@@ -1,0 +1,35 @@
+ /* Id is unique. Class can be used for multiple elements */
+ #flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: lightgray;
+    height: 500px;
+  }
+
+  .geel {
+    flex: 2;
+    background-color: gold;
+  }
+
+  .geel img {
+    width: 50%;
+    max-width: 90%;
+  }
+
+  .rood {
+    flex: 1;
+    background-color: red;
+  }
+
+  @media screen and (min-width: 800px) {
+    #flex-container {
+      flex-direction: row;
+    }
+
+    .geel img {
+      width: 75%;
+      max-width: 90%;
+      min-height: auto;
+    }
+  }

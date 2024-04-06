@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact</h1>
+    <!-- /* server onlie */ -->
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="idvoornaam">Voornaam</label><br>
+        <input type="text" id="idvoornaam" name="voornaam" placeholder="Geef je voornaam in" minlength="2" /><br><br>
+
+        <label for="idpasswoord">Paswoord</label><br>
+        <input type="password" id="idpasswoord" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}$" 
+        title="Minimaal 8 tekens lang,Ten minste één cijfer,Ten minste één hoofdletter,Ten minste één kleine letter en Ten minste één speciaal teken (!@#$%^&*)"
+        required/><br><br>
+
+        <label for="idmail">E-mailadres</label><br>
+        <input type="email" id="idmail" name="mail" placeholder="mailadres@Multimedi.be" 
+        pattern="^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$ "
+       /><br><br>
+
+        <label for="idtelefoonnummer">Telefoonnummer</label><br>
+        <input type="tel" id="idtelefoonnummer" name="telefoonnummer" placeholder="+32 xxx/xx xx xx" minlength="16" /><br><br>
+
+        <label for="idlinkedin">Linkedin</label><br>
+        <input type="url" id="idlinkedin" name="linkedin" placeholder="Url - Linkedin" /><br><br>
+
+        <label for="idopmerkingen">Opmerkingen</label><br>
+        <textarea id="idopmerkingen" name="opmerkingen" rows="5" cols="20" placeholder="Eventuele opmerkingen ..." ></textarea><br><br>
+
+        <input type="submit" value="Verznden"/>
+    </form>
+</body>
+</html>
